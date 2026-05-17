@@ -1,6 +1,6 @@
 # 🎟️ Ticket Booking Backend
 
-A **Ticket Master Clone** — a RESTful backend API for event ticket booking, built with **FastAPI**, **SQLModel**, and **MySQL**. It supports full CRUD operations across users, events, venues, seats, payments, orders, and tickets, along with advanced analytics queries.
+A **Ticket Master Clone** : a RESTful backend API for event ticket booking, built with **FastAPI**, **SQLModel**, and **MySQL**. It supports full CRUD operations across users, events, venues, seats, payments, orders, and tickets, along with advanced analytics queries.
 
 ---
 
@@ -37,16 +37,16 @@ ticket_booking_backend/
 
 The application manages the following entities:
 
-- **Role** — user roles (e.g. admin, customer)
-- **User** — registered users with hashed passwords, roles, and profile info
-- **Category / SubCategory** — event classification (e.g. Music > Rock)
-- **Venue** — physical locations with capacity and contact details
-- **Event** — events tied to a venue and category, with ticket availability tracking
-- **Seat** — individual seats within a venue
-- **Payment** — payment records with method and status
-- **Order** — a user's purchase, linking to payment
-- **Ticket** — individual tickets linked to an order and seat
-- **UserEvent** — many-to-many relationship tracking which users attend which events
+- **Role** : user roles (e.g. admin, customer)
+- **User** : registered users with hashed passwords, roles, and profile info
+- **Category / SubCategory** : event classification (e.g. Music > Rock)
+- **Venue** : physical locations with capacity and contact details
+- **Event** : events tied to a venue and category, with ticket availability tracking
+- **Seat** : individual seats within a venue
+- **Payment** : payment records with method and status
+- **Order** : a user's purchase, linking to payment
+- **Ticket** : individual tickets linked to an order and seat
+- **UserEvent* * : many-to-many relationship tracking which users attend which events
 
 ---
 
@@ -162,7 +162,7 @@ The API will be available at `http://localhost:8000`.
 
 ## 📖 API Documentation
 
-FastAPI auto-generates interactive documentation:
+FastAPI autogenerates interactive documentation:
 
 - **Swagger UI** → `http://localhost:8000/docs`
 - **ReDoc** → `http://localhost:8000/redoc`
@@ -171,7 +171,7 @@ FastAPI auto-generates interactive documentation:
 
 ## 🌐 CORS
 
-The server allows cross-origin requests from:
+The server allows cross origin requests from:
 - `http://localhost:3000` (React default)
 - `http://localhost:5173` (Vite default)
 
@@ -183,7 +183,7 @@ To add other origins, update the `origins` list in `main.py`.
 
 - Passwords are hashed using **bcrypt** via `passlib`.
 - The `User.hash_password()` and `User.verify_password()` static methods handle all password operations.
-- No JWT tokens are implemented in the current version — authentication returns the user object on successful login.
+- No JWT tokens are implemented in the current version ,authentication returns the user object on successful login.
 
 ---
 
